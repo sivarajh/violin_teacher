@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <g transform="translate(3 -2) rotate(-40 50 50)">
+    <!-- body: upper bout, waist, lower bout -->
+    <path d="M50 31
+             C60 31 66 33 66 41
+             L63 46
+             C59.5 47.5 58.5 50 58.5 54
+             C58.5 58 59.5 60.5 63 62
+             L67 64
+             C70 70 70 80 66 85
+             C62 89.5 56 91 50 91
+             C44 91 38 89.5 34 85
+             C30 80 30 70 33 64
+             L37 62
+             C40.5 60.5 41.5 58 41.5 54
+             C41.5 50 40.5 47.5 37 46
+             L34 41
+             C34 33 40 31 50 31 Z"
+          fill="#b5562b" stroke="#5a2a12" stroke-width="2.5" stroke-linejoin="round"/>
+    <!-- fingerboard / neck -->
+    <rect x="46.5" y="6" width="7" height="58" rx="2.5" fill="#2b1a10"/>
+    <!-- scroll and pegbox -->
+    <circle cx="50" cy="6" r="5.5" fill="#5a2a12"/>
+    <circle cx="50" cy="6" r="2.2" fill="#b5562b"/>
+    <!-- bridge & tailpiece -->
+    <rect x="43" y="66" width="14" height="3" rx="1" fill="#f2dfc4"/>
+    <path d="M46 74 L54 74 L52.5 86 L47.5 86 Z" fill="#2b1a10"/>
+    <!-- f-holes -->
+    <path d="M40 60 q-2 6 1 12" stroke="#2b1a10" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M60 60 q2 6 -1 12" stroke="#2b1a10" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <!-- strings -->
+    <path d="M48.5 10 V80 M51.5 10 V80" stroke="#f2dfc4" stroke-width="0.8"/>
+  </g>
+</svg>
