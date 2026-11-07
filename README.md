@@ -48,7 +48,7 @@ npm start            # then scan the QR code / press i or a for a simulator
 ### On the web
 
 The included workflow (`.github/workflows/pages.yml`) typechecks, lints, tests and publishes the
-web app to GitHub Pages whenever `main` changes. Turn it on in **Settings → Pages → Source:
+web app to GitHub Pages whenever the default branch changes. Turn it on in **Settings → Pages → Source:
 GitHub Actions**, then open `https://<user>.github.io/violin_teacher/` on any device. Browsers
 only allow the microphone over `https://` or `localhost`.
 
