@@ -1,0 +1,47 @@
+{
+  "expo": {
+    "name": "Violin Teacher",
+    "slug": "violin-teacher",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.violinteacher.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#F6E6DA",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "package": "com.violinteacher.app"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "output": "single",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-audio",
+        {
+          "microphonePermission": "Violin Teacher listens to your playing to check that your notes are in tune. Audio is analysed on your device and never recorded or uploaded."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Choose a photo of your sheet music to transcribe and practise.",
+          "cameraPermission": "Take a photo of your sheet music to transcribe and practise.",
+          "microphonePermission": false
+        }
+      ]
+    ],
+    "scheme": "violinteacher"
+  }
+}

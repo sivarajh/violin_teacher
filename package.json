@@ -1,12 +1,53 @@
 {
   "name": "violin-teacher",
   "version": "1.0.0",
-  "description": "A browser-based violin teacher: lessons, tuner, and listening practice for your own sheet music.",
-  "private": true,
-  "type": "module",
-  "scripts": {
-    "start": "npx --yes http-server -c-1 -p 8080 .",
-    "test": "node --test"
+  "main": "expo-router/entry",
+  "dependencies": {
+    "@expo/metro-runtime": "~58.0.17",
+    "@react-native-async-storage/async-storage": "2.2.0",
+    "expo": "~58.0.23",
+    "expo-audio": "~58.0.11",
+    "expo-constants": "~58.0.15",
+    "expo-document-picker": "~58.0.4",
+    "expo-file-system": "~58.0.13",
+    "expo-image-picker": "~58.0.10",
+    "expo-linking": "~58.0.16",
+    "expo-router": "~58.0.30",
+    "expo-status-bar": "~58.0.4",
+    "fflate": "^0.8.3",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "react-native": "0.88.1",
+    "react-native-safe-area-context": "~5.11.1",
+    "react-native-screens": "~4.30.1",
+    "react-native-svg": "15.16.0",
+    "react-native-web": "~0.21.4"
   },
-  "license": "MIT"
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "@types/react": "~19.3.0",
+    "eslint": "^9.0.0",
+    "eslint-config-expo": "~58.0.4",
+    "jest": "^30.5.2",
+    "jest-expo": "^58.0.14",
+    "typescript": "~6.0.3"
+  },
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "build:web": "expo export --platform web",
+    "test": "jest",
+    "typecheck": "tsc --noEmit",
+    "lint": "expo lint"
+  },
+  "private": true,
+  "description": "Violin Teacher: lessons, a tuner and listening practice for your own sheet music, on iOS, Android and the web.",
+  "jest": {
+    "preset": "jest-expo",
+    "testMatch": [
+      "**/__tests__/**/*.test.ts"
+    ]
+  }
 }
