@@ -1,0 +1,12 @@
+{
+  "name": "violin-teacher",
+  "version": "1.0.0",
+  "description": "A browser-based violin teacher: lessons, tuner, and listening practice for your own sheet music.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "npx --yes http-server -c-1 -p 8080 .",
+    "test": "node --test"
+  },
+  "license": "MIT"
+}
